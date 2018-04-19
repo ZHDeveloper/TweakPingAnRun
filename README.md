@@ -69,6 +69,8 @@ sudo /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/AloneMonkey/Monk
 #### 2、运行工程
 
 - 由于包名冲突，需先删除测试机平安金管家。
+- 由于github限制100M上传，需从PP助手下载平安金管家越狱版本ipa
+- 将ipa放到TweakPingAnRun/TargetApp/目录下
 - 打开工程 TweakPingAnRun/TweakPingAnRun.xcodeproj 
 - 选择证书：Targets-General-Signing
 - 真机运行
