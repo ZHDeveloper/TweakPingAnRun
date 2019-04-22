@@ -72,15 +72,15 @@ CHOptimizedMethod0(self, NSString*, CustomViewController, getMyName){
 //add new property
 CHPropertyRetainNonatomic(CustomViewController, NSString*, newProperty, setNewProperty);
 
-CHDeclareClass(PARSHomePageViewController)
-CHOptimizedMethod(0, self, void, PARSHomePageViewController,clickWithOnLineServiceBtn) {
+CHDeclareClass(PARSSpecialHomeViewController)
+CHOptimizedMethod(0, self, void, PARSSpecialHomeViewController,clickWithOnLineServiceBtn) {
     
     ModiyfDataViewController *vc = [ModiyfDataViewController new];
     UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:vc];
     [self presentViewController:naviVC animated:true completion:nil];
 }
 
-CHOptimizedMethod(0, self, void, PARSHomePageViewController,viewDidLoad) {
+CHOptimizedMethod(0, self, void, PARSSpecialHomeViewController,viewDidLoad) {
     
     if (![NSDate isModifyDateToday]) {
         [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"stepCount"];
@@ -102,7 +102,7 @@ CHOptimizedMethod(0, self, void, PARSHomePageViewController,viewDidLoad) {
         [self presentViewController:alertVC animated:YES completion:nil];
     }
     
-    CHSuper0(PARSHomePageViewController, viewDidLoad);
+    CHSuper0(PARSSpecialHomeViewController, viewDidLoad);
 }
 
 CHDeclareClass(PARSPedometerInfo)
@@ -138,9 +138,9 @@ CHConstructor{
     CHHook0(CustomViewController, newProperty);
     CHHook1(CustomViewController, setNewProperty);
     
-    CHLoadLateClass(PARSHomePageViewController);
-    CHClassHook(0, PARSHomePageViewController, clickWithOnLineServiceBtn);
-    CHClassHook(0, PARSHomePageViewController, viewDidLoad);
+    CHLoadLateClass(PARSSpecialHomeViewController);
+    CHClassHook(0, PARSSpecialHomeViewController, clickWithOnLineServiceBtn);
+    CHClassHook(0, PARSSpecialHomeViewController, viewDidLoad);
     
     CHLoadLateClass(PARSPedometerInfo);
     CHClassHook(0, PARSPedometerInfo, heartRate);

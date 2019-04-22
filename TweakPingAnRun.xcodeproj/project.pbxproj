@@ -780,7 +780,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N88V6DBL7E;
+				DEVELOPMENT_TEAM = S2PRN5RUXV;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TweakPingAnRun/Info.plist;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
@@ -800,7 +800,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N88V6DBL7E;
+				DEVELOPMENT_TEAM = S2PRN5RUXV;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TweakPingAnRun/Info.plist;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
